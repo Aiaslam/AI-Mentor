@@ -1,16 +1,78 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# AI Mentor
 
-Currently, two official plugins are available:
+An AI powered interview practice tool. Choose a topic like JavaScript, Node.js, or MongoDB and chat with an AI interviewer. It asks questions, evaluates your answers, gives score and suggests areas to improve.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Features
+- Smart interview chatbot
+- Topic-based questioning
+- Basic → Advanced difficulty progression
+- Score and feedback after each answer
+- Weak-area suggestions for improvement
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Part | Technology |
+|------|------------|
+| Frontend UI | React + Vite |
+| AI Engine | CopilotKit Cloud (internally uses GPT) |
+| UI Components | CopilotKit React UI |
+
+---
+
+## Setup Instructions
+
+### 1. Clone this repository
+```sh
+git clone https://github.com/Aiaslam/AI-Mentor.git
+cd AI-Mentor
+````
+
+### 2. Install dependencies
+
+```sh
+npm install
+```
+
+### 3. Create a `.env` file in the project root
+
+```
+VITE_COPILOT_PUBLIC_KEY=your_public_key_here
+```
+
+### 4. Run the project
+
+```sh
+npm run dev
+```
+
+---
+
+## Folder Structure
+
+```
+src/
+  App.jsx                 → Main app UI layout
+  ai/reviewerPrompt.js    → AI interview logic
+  assets/                 → App images & icons
+```
+
+---
+
+## Future Enhancements
+
+* Difficulty levels (Easy / Medium / Hard)
+* Voice mode interviews
+* Dashboard tracking progress over time
+
+---
+
+## License
+
+This project is open to collaborate and improve.
+
+
